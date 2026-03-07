@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}{% endblock %}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+<h2 class="logo">💰 Finance</h2>
+
+<ul>
+
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/add_income">Add Income</a></li>
+<li><a href="/add_expense">Add Expense</a></li>
+<li><a href="/logout">Logout</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- Main Content -->
+<div class="main">
+
+<div class="topbar">
+
+<h2>{% block page %}{% endblock %}</h2>
+
+</div>
+
+<div class="content">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
