@@ -1,0 +1,138 @@
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f4f6fb;
+}
+
+.layout{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:220px;
+height:100vh;
+background:#1e293b;
+color:white;
+padding:20px;
+}
+
+.logo{
+margin-bottom:30px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+margin:20px 0;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+/* Main */
+
+.main{
+flex:1;
+}
+
+.topbar{
+background:white;
+padding:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content{
+padding:30px;
+}
+
+/* Cards */
+
+.cards{
+display:flex;
+gap:20px;
+}
+
+.card{
+flex:1;
+padding:20px;
+border-radius:10px;
+color:white;
+}
+
+.income{
+background:linear-gradient(135deg,#16a34a,#4ade80);
+}
+
+.expense{
+background:linear-gradient(135deg,#dc2626,#f87171);
+}
+
+.savings{
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+}
+
+.card p{
+font-size:22px;
+font-weight:bold;
+}
+
+/* Form */
+
+.form-box{
+background:white;
+padding:30px;
+width:400px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Auth pages */
+
+.auth-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.auth-card{
+background:white;
+padding:40px;
+border-radius:10px;
+width:300px;
+text-align:center;
+}
+
+.chart-container{
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+}
