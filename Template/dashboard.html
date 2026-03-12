@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block page %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="cards">
+
+<div class="card income">
+<h3>Total Income</h3>
+<p>₹ {{income}}</p>
+</div>
+
+<div class="card expense">
+<h3>Total Expense</h3>
+<p>₹ {{expense}}</p>
+</div>
+
+<div class="card savings">
+<h3>Savings</h3>
+<p>₹ {{saving}}</p>
+</div>
+
+</div>
+
+
+<div class="chart-container">
+
+<canvas id="expenseChart"></canvas>
+
+</div>
+
+<script src="/static/js/charts.js"></script>
+
+{% endblock %}
