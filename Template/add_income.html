@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Add Income{% endblock %}
+{% block page %}Add Income{% endblock %}
+
+{% block content %}
+
+<div class="form-box">
+
+<form method="POST">
+
+<input type="number" name="amount" placeholder="Amount">
+
+<input type="text" name="source" placeholder="Income Source">
+
+<input type="date" name="date">
+
+<button>Add Income</button>
+
+</form>
+
+</div>
+
+{% endblock %}
